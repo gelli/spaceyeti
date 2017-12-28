@@ -1,0 +1,32 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep#
+/web/app/themes/spaceyeti/dist
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Node 
+node_modules/
+
+# Workspace files
+workspace/
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+.cache-loader/
+
+# php 
+php.log
+

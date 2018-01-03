@@ -89,20 +89,17 @@ let webpackConfig = {
                 config: { path: __dirname + '/config/webpack/', ctx: config },
                 sourceMap: config.enabled.sourceMaps,
               },
-            }, 
+            },
              { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps } },
-             { loader: 'sass', options: { sourceMap: config.enabled.sourceMaps } },
+
+             /*
+              * Source maps for sass need to be set in any case, since resolve-url
+              * needs them to get relative paths resolved
+              * source maps are thrown away later in the build process
+              */
+             { loader: 'sass', options: { sourceMap: true } },
           ],
         }),
-      },
-      {
-        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
-        include: config.paths.assets,
-        loader: 'url',
-        options: {
-          limit: 4096,
-          name: `[path]${assetsFilenames}.[ext]`,
-        },
       },
       {
         test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
@@ -111,11 +108,20 @@ let webpackConfig = {
         options: {
           limit: 4096,
           outputPath: 'vendor/',
-          name: `${config.cacheBusting}.[ext]`,
+          name: `${assetsFilenames}.[ext]`,
+        },
+      },
+      {
+        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
+        loader: 'url',
+        options: {
+          limit: 4096,
+          outputPath: 'static/',
+          name: `${assetsFilenames}.[ext]`,
         },
       },
     ],
-  },
+  }, 
   resolve: {
     modules: [
       config.paths.assets,

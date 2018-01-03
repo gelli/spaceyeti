@@ -11,6 +11,11 @@ class App extends Controller
         return get_bloginfo('name');
     }
 
+    public static function maincss()
+    {
+        return \App\asset_path('styles/main.css');
+    }
+
     public static function title()
     {
         if (is_home()) {

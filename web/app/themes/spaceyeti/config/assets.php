@@ -1,7 +1,5 @@
 <?php
 
-var_dump(get_template_directory_uri());exit;
-
 return [
 
     /*

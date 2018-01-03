@@ -30,3 +30,4 @@ vendor/*
 # php 
 php.log
 
+config/backup

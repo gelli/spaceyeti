@@ -32,3 +32,9 @@ php.log
 
 config/backup
 log
+
+/.vscode/
+
+/junkyard/
+/web/app/uploads
+/web/app/cache

@@ -2,26 +2,48 @@
 <html @php(language_attributes())>
   @include('partials.head')
   <body @php(body_class())>
-    @php(do_action('get_header'))
-    @include('partials.header')
-    <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
-          @yield('content')
-        </main>
-        @if (App\display_sidebar())
-          <aside class="sidebar">
-            @include('partials.sidebar')
-          </aside>
-        @endif
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+        </div>
+
+        <div class="navbar-end">
+        <a class="navbar-item">
+            Test
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
     </div>
-    @php(do_action('get_footer'))
-    @include('partials.footer')
-    @php(wp_footer())
+  </section>
+
+  @php(wp_footer())
     <noscript id="deferred-styles">
-    <link rel="stylesheet" type="text/css" href="{!! App\Controllers\App::maincss() !!}"/>
-  </noscript>
+      <link rel="stylesheet" type="text/css" href="{!! App\Controllers\App::maincss() !!}"/>
+    </noscript>
     <script>
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");

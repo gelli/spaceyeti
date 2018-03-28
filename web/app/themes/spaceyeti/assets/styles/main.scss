@@ -1,6 +1,152 @@
 /* @import '/Users/gelli/Documents/Projects/spaceyeti/web/wp/wp-includes/css/dashicons';
 @import './test'; */
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+@import '~font-awesome/scss/_variables.scss';
+$fa-font-path: "~font-awesome/fonts";
 
-@import "~bulma/sass/utilities/_all";
+@import "~font-awesome/scss/mixins";
+// @import "~font-awesome/scss/path";
+
+/* @font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src:
+    url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+  //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "~font-awesome/scss/core";
+@import "~font-awesome/scss/larger";
+@import "~font-awesome/scss/fixed-width";
+@import "~font-awesome/scss/list";
+@import "~font-awesome/scss/bordered-pulled";
+@import "~font-awesome/scss/animated";
+@import "~font-awesome/scss/rotated-flipped";
+@import "~font-awesome/scss/stacked";
+@import "~font-awesome/scss/icons";
+@import "~font-awesome/scss/screen-reader"; */
+
+@import "~font-awesome/scss/font-awesome";
+
+// @import 'https://fonts.googleapis.com/css?family=Roboto:700, 400';
+
+$body-background-color: #f4faff;
+$card-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 
 @import "~bulma/bulma";
+
+.articles {
+  // margin: 5rem 0;
+  padding: 0 20px;
+  align-items: stretch;
+  display: flex;
+}
+
+@import 'components/postmodule';
+
+.hover .post-content .description {
+  display: block !important;
+  height: auto !important;
+  opacity: 1 !important;
+}
+
+.card__share {
+  float: right;
+  position: relative;
+  margin-top: -54px;
+  margin-right: -10px;
+  z-index: 1;
+}
+
+.card__social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  width: 160px;
+  transform: translateZ(0);
+  transform: translateX(0);
+  transition: transform 0.35s ease;
+}
+
+.card__social--active {
+  visibility: visible;
+
+  /* z-index: 3; */
+  transform: translateZ(0);
+  transform: translateX(-48px);
+  transition: transform 0.35s ease;
+}
+
+.share-toggle {
+  z-index: 2;
+  text-decoration: none;
+}
+
+.share-toggle::before {
+  content: "\f1e0";
+  font-family: "FontAwesome";
+  color: #3498db;
+}
+
+.share-toggle.share-expanded::before {
+  content: "\f00d";
+}
+
+.share-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  outline: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.share-icon .fa {
+  line-height: 48px;
+}
+
+.share-icon:hover,
+.share-icon:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #00abe3;
+}
+
+.pinterest {
+  background-color: #d3492c;
+}
+
+.facebook,
+.twitter,
+.pinterest {
+  color: #fff;
+}
+
+.facebook:hover,
+.twitter:hover,
+.pinterest:hover {
+  color: #eee;
+}

@@ -23,59 +23,51 @@
     </div>
   </nav>
 
-<!--   <section class="container">
-    <div class="columns">
-      <div class="column is-two-" style="background-color: blue">
-      </div>
-      <div class="column" style="background-color: yellow">
-      </div>
-    </div>
-  </section> -->
-
 
   <!-- ganz oben -->
   <section class="container">
-  <div class="columns">
+    <div class="columns">
       <div class="column is-12">
 
-    <div class="post-module">
-      <div class="thumbnail column is-two-thirds-widescreen is-full-desktop is-full-mobile is-full-tablet">
-          <img class="image" src="https://www.littlebluebag.de/app/uploads/2017/03/4.7.10-Langzeitbelichtung-bei-Tag_NYC_littlebluebag_0005.jpg"/>
-          <div class="date">
-              <div class="day">27</div>
-              <div class="month">Mar</div>
+        <div class="post-module">
+          <div class="thumbnail column is-two-thirds-widescreen is-full-desktop is-full-mobile is-full-tablet">
+              <img class="image" src="https://www.littlebluebag.de/app/uploads/2017/03/4.7.10-Langzeitbelichtung-bei-Tag_NYC_littlebluebag_0005.jpg"/>
+              <div class="date">
+                  <div class="day">27</div>
+                  <div class="month">Mar</div>
+              </div>
+              <div class="category">Fotografie-Tipps</div>
           </div>
-          <div class="category">Fotografie-Tipps</div>
-      </div>
-      
-      <div class="post-content column is-one-third-widescreen is-full-desktop is-full-mobile is-full-tablet">
-        <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
-        <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
-        <p class="description">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!
+          
+          <div class="post-content column is-one-third-widescreen is-full-desktop is-full-mobile is-full-tablet">
+            <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
+            <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
+            <p class="description">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!
 
-        </p>
-        <i class="fa fa-share-alt"></i>
-        <i class="fa fa-share"></i>
+            </p>
+            <i class="fa fa-share-alt"></i>
+            <i class="fa fa-share"></i>
 
 
-        <div class="post-meta">
-          <span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span>
-          <span class="comments">
-            <i class="fa fa-comments"></i>
-            <a href="#"> 39 comments</a>
-          </span>
+            <div class="post-meta">
+              <span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>
+              <span class="comments">
+                <i class="fa fa-comments"></i>
+                <a href="#"> 39 comments</a>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div></div>
   </section>
 
 
   <!-- 3 artikel nebeneinander -->
 
   <section class="container">
-    <div class="columns">
-      <div class="column is-4 flexon">
+    <div class="columns is-multiline">
+      <div class="column is-4-desktop is-full-tablet flexon">
           <div class="post-module flexlayout">
             <div class="thumbnail">
                 <div class="date">
@@ -103,12 +95,12 @@
 
               <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
               <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
-              <p class="description">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
+              <p class="description is-hidden-desktop-only">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
               <i class="fa fa-share-alt"></i>
               <i class="fa fa-share"></i>
 
               <div class="post-meta">
-                <span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span>
+                <span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>
                 <span class="comments">
                   <i class="fa fa-comments"></i>
                   <a href="#"> 39 comments</a>
@@ -119,7 +111,7 @@
       </div>
 
       <!-- side bar -->
-     <div class="column is-4 flexon"> 
+     <div class="column is-4-desktop is-full-tablet flexon"> 
         <div class="card post-module flexlayout">
           <div class="thumbnail">
             <div class="date">
@@ -148,12 +140,12 @@
 
             <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
             <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
-            <p class="description">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
+            <p class="description is-hidden-desktop-only">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
             <i class="fa fa-share-alt"></i>
             <i class="fa fa-share"></i>
 
             <div class="post-meta">
-              <span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span>
+              <span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>
               <span class="comments">
                 <i class="fa fa-comments"></i>
                 <a href="#"> 39 comments</a>
@@ -164,7 +156,7 @@
     </div>
 
       <!-- side bar -->
-      <div class="column is-4 flexon"> 
+      <div class="column is-4-desktop is-full-tablet flexon"> 
         <div class="card post-module flexlayout">
           <div class="thumbnail">
             <div class="date">
@@ -194,12 +186,12 @@
 
             <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
             <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
-            <p class="description">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
+            <p class="description is-hidden-desktop-only">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
             <i class="fa fa-share-alt"></i>
             <i class="fa fa-share"></i>
 
             <div class="post-meta">
-              <span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span>
+              <span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>
               <span class="comments">
                 <i class="fa fa-comments"></i>
                 <a href="#"> 39 comments</a>

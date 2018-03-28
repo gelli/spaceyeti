@@ -40,11 +40,13 @@ $fa-font-path: "~font-awesome/fonts";
 $body-background-color: #f4faff;
 $card-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 
+$column-gap: 0.75rem;
+
 @import "~bulma/bulma";
 
 .articles {
   // margin: 5rem 0;
-  padding: 0 20px;
+  padding: 0;
   align-items: stretch;
   display: flex;
 }
@@ -149,4 +151,22 @@ $card-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 .twitter:hover,
 .pinterest:hover {
   color: #eee;
+}
+
+.headerimage {
+  background-color: yellow;
+}
+
+.sometext {
+  background-color: grey;
+  flex-grow: 1;
+}
+
+.flexlayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexon {
+  display: flex;
 }

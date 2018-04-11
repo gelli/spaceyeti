@@ -111,15 +111,15 @@ let webpackConfig = {
           name: `${assetsFilenames}.[ext]`,
         },
       },
-      {
+/*       {
         test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
-        loader: 'url',
+        loader: 'file',
         options: {
           limit: 4096,
           outputPath: 'static/',
           name: `${assetsFilenames}.[ext]`,
         },
-      },
+      }, */
     ],
   }, 
   resolve: {

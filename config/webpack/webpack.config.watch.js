@@ -26,13 +26,13 @@ module.exports = {
     // new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new DashboardPlugin(),
-    new BrowserSyncPlugin({
+    /* new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
       // open: config.open,
       proxy: 'http://[::1]:9000',
       // watch: config.watch,
       // delay: 500,
-    }),
+    }), */
   ],
 };

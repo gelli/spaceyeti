@@ -14,7 +14,7 @@ const config = {
   },
   open: false,
   copy: 'images/**/*',
-  proxyUrl: 'http://localhost:3000',
+  proxyUrl: 'http://localhost:9000',
   publicPath: '/app/themes/spaceyeti',
   paths: {
     root: rootPath,
@@ -28,7 +28,6 @@ const config = {
     watcher: !!argv.watch,
   },
   devUrl: 'http://localhost:9000',
-  proxyUrl: 'http://localhost:3000',
   cacheBusting: '[name]_[hash:8]',
   watch: [
     'app/**/*.php',

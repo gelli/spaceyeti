@@ -25,7 +25,7 @@
 
 
   <!-- ganz oben -->
-  <section class="container">
+  <section class="container section">
     <div class="columns">
       <div class="column is-12">
 
@@ -40,8 +40,8 @@
           </div>
           
           <div class="post-content column is-one-third-widescreen is-full-desktop is-full-mobile is-full-tablet">
-            <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
-            <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
+            <h2 class="title is-3">Deine Fotos nach der Reise Lorem Ipsum</h1>
+            <h3 class="title is-4">Kostenlose Foto CheckListe zum Download</h2>
             <p class="description">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!
 
             </p>
@@ -65,7 +65,7 @@
 
   <!-- 3 artikel nebeneinander -->
 
-  <section class="container">
+  <section class="container section">
     <div class="columns is-multiline">
       <div class="column is-4-desktop is-full-tablet flexon">
           <div class="post-module flexlayout">
@@ -93,8 +93,8 @@
                 <a id="share" class="share-toggle share-icon" href="#"></a>
               </div>
 
-              <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
-              <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
+            <h2 class="title is-3">Deine Fotos nach der Reise Lorem Ipsum</h2>
+            <h3 class="title is-4">Kostenlose Foto CheckListe zum Download</h3>
               <p class="description is-hidden-desktop-only">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
               <i class="fa fa-share-alt"></i>
               <i class="fa fa-share"></i>
@@ -138,8 +138,8 @@
               <a id="share" class="share-toggle share-icon" href="#"></a>
             </div>
 
-            <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
-            <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
+            <h2 class="title is-3">Deine Fotos nach der Reise Lorem Ipsum</h2>
+            <h3 class="title is-4">Kostenlose Foto CheckListe zum Download</h3>
             <p class="description is-hidden-desktop-only">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
             <i class="fa fa-share-alt"></i>
             <i class="fa fa-share"></i>
@@ -184,8 +184,8 @@
               <a id="share" class="share-toggle share-icon" href="#"></a>
             </div>
 
-            <h1 class="title">Deine Fotos nach der Reise Lorem Ipsum</h1>
-            <h2 class="sub_title">Kostenlose Foto CheckListe zum Download</h2>
+            <h2 class="title is-3">Deine Fotos nach der Reise Lorem Ipsum</h2>
+            <h3 class="title is-4">Kostenlose Foto CheckListe zum Download</h3>
             <p class="description is-hidden-desktop-only">Es ist Herbst. Regen, Nebel, Sonne, bunter Blätter… es gibt jede Menge toller herbstlicher Fotomotive, daher gibt es für dich eine kostenlose Herbst Foto Checkliste für den Herbst von uns!</p>
             <i class="fa fa-share-alt"></i>
             <i class="fa fa-share"></i>
@@ -200,8 +200,14 @@
           </div>
         </div>
     </div>
+  </section>
 
-</section>
+    @include('partials.fullhero')
+
+  @include('partials.fiver')
+  @include('partials.fourblock')
+  @include('partials.fiver')
+
 
   @php(wp_footer())
     <noscript id="deferred-styles">

@@ -1,0 +1,31 @@
+
+.fancy {
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.fancy::before,
+.fancy::after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.fancy::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.fancy::after {
+  left: 0.5em;
+  margin-right: -50%;
+}

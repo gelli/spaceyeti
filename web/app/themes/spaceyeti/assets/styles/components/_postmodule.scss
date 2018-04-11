@@ -1,7 +1,7 @@
 .post-module {
   @extend .card, .columns, .is-multiline;
 
-  margin: 5rem 0;
+  margin: 1rem 0;
   position: relative;
   // z-index: 1;
   display: block;
@@ -43,7 +43,7 @@
   background: #396383;
   width: 55px;
   height: 55px;
-  padding: 12.5px 0;
+  padding: 8px 0;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -56,11 +56,12 @@
 }
 
 .post-module .thumbnail .date .day {
-  font-size: 18px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .post-module .thumbnail .date .month {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -99,32 +100,21 @@
   background: #396383;
   padding: 10px 15px;
   color: #fff;
-  font-size: 14px;
+  // font-size: 14px;
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
   align-self: start;
 }
 
-.post-module .post-content .title {
-  margin: 0;
-  padding: 0 0 10px;
-  color: #333;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.post-module .post-content .sub_title {
-  margin: 0;
-  padding: 0 0 20px;
+.post-module .post-content h3 {
   color: #396383;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .post-module .post-content .description {
   // display: none;
   color: #666;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.8em;
 }
 
